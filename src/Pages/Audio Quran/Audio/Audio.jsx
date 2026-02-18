@@ -216,8 +216,8 @@ export default function Audio() {
                 </div>
               </div>
 
-              {/* Controls */}
-              <div className="flex items-center justify-between">
+ {/* Controls */}
+              <div className="flex items-center sm:justify-between justify-center">
                 {/* Left: Volume */}
                 <div className="hidden md:flex items-center gap-3 flex-1">
                   <button
@@ -257,7 +257,7 @@ export default function Audio() {
                     onClick={() => {
                       if (audioRef.current) audioRef.current.currentTime -= 10;
                     }}
-                    className="w-12 h-12 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center text-white transition-all duration-300">
+                    className="w-12 h-12 hidden sm:flex  bg-slate-700 hover:bg-slate-600 rounded-full items-center justify-center text-white transition-all duration-300">
                     <i className="fa-solid fa-backward text-xl"></i>
                   </button>
                   <button
@@ -278,7 +278,7 @@ export default function Audio() {
                     onClick={() => {
                       if (audioRef.current) audioRef.current.currentTime += 10;
                     }}
-                    className="w-12 h-12 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center text-white transition-all duration-300">
+                    className="w-12 h-12 hidden sm:flex  bg-slate-700 hover:bg-slate-600 rounded-full items-center justify-center text-white transition-all duration-300">
                     <i className="fa-solid fa-forward text-xl"></i>
                   </button>
                   <button
