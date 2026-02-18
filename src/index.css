@@ -1,0 +1,100 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  direction: rtl;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --main-color: #fff;
+  --secondary-color: rgb(220, 156, 81);
+  --bg-1:rgb(30,30,30);
+  --bg-2:#e8dac3;
+  --main-transition: .3s;
+  --main-padding: 50px;
+}
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  -webkit-border-radius: 3pxa;
+  -moz-border-radius: 3pxa;
+  -ms-border-radius: 3pxa;
+  -o-border-radius: 3pxa;
+}
+a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(Image/contactUs.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+}
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "Amiri", "Scheherazade", "Traditional Arabic", sans-serif;
+}
+
+button {
+  border-radius: 8px;
+  color:var(--main-color);
+  border: 3px solid var(--main-color) ;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  outline: none;
+}
+button:hover {
+  background-color: var(--main-color);
+  color:var(--secondary-color);
+}
+.title{
+  text-align: center;
+  padding: var(--main-padding) 0;
+  font-weight: bold;
+  h2{
+    color:var(--secondary-color);
+    font-size: 40px;
+
+  }
+  p{
+    color:#969696;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+}
